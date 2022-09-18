@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recours</title>
+</head>
+<body>
+    <p>Inscrivez-vous aux recours avant le délai établie,</p>
+    <form method="post" action=""> 
+        <p>veillez remplir vos identités sur le present formulaire et soumettez-le.</p>
+        <fieldset>
+            <legend> Vos coordonnées</legend>
+        <label for="nom">Nom</label> : <input type="text" name="Nom" id="nom" placeholder="Nom" size="30" maxlength="30"><br><br>
+        <label for="post-nom">Post-nom</label> : <input type="text" name="Post-nom" id="post-nom" placeholder="Post-nom" size="30" maxlength="40"><br><br>
+        <label for="prenom">Prenom</label> : <input type="text" name="prenom" id="prenom" placeholder="Prenom" size="15" maxlength="20"><br><br>
+        <label for="matricule">Matricule</label> : <input type="text" name="matricule" id="matricule"\ placeholder="Matricule" size="15" maxlength="10"><br><br>
+        <label for="Filière">Filière</label> : <input type="text" name="Filière" id="Filière" placeholder="Filière" size="25" maxlength="30"><br><br>
+        <select name="Filière" id="Filière">
+            <option value="Design"> Design</option>
+            <option value="genie logiciel">Genie logiciel</option>
+            <option value="MSI">MSI</option>
+            <option value="ADMIN">ADMIN</option>
+            <option value="TELECOM">TELECOM</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Motifs</legend>
+        <p>
+            Quel est le motif qui vous pousse soumettre votre recours :<br><br>
+            <input type="radio" name="motif" value="Maladie"
+            id="Maladie" /> <label for="Maladie">raison de Maladie</label><br><br>
+            <input type="radio" name="motif" value="rater"
+            id="rater" /> <label for="rater">avoir rater un examen</label><br><br>
+            <input type="radio" name="motif" value="deuil"
+            id="deuil" /> <label for="etre éprouver"> un deuil de prémier dégré</label><br><br>
+            <input type="radio" name="motif" value="autre"
+            id="autre" /> <label for="autre">Autre...</label><br><br>
+            </p>
+            <p>
+            <label for="precisions">Si "Autre", veuillez préciser
+            :</label>
+            <textarea name="precisions" id="precisions" cols="40"
+            rows="4"></textarea>
+            </p>
+    </fieldset>
+    </form>
+</body>
+</html>
